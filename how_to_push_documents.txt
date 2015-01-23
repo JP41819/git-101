@@ -20,7 +20,7 @@ $ cd nameofdirectory
 $ git init
 
 #Type the text to be contained within the file create the file
-#Add the file to the directory
+#Add the file to be commited
 #Check that the file has been created
 
 $ echo "type message here" > filename.md
