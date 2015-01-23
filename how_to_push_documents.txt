@@ -1,0 +1,54 @@
+#Follow this to push files onto GitHub remote
+
+#Create remote repository for the file to be pushed to if it doesn't already exist
+#Optional - export a text editor of choice in which to type your commit message before pushing your file
+
+$ export editor=notepad
+
+#Check the directory/folder in which are currently
+#list all sub directories/folders
+#change directory if necessary
+
+$ pwd
+$ ls
+$ cd
+
+#Create a directory/folder in which to save your text file and initialise a repositoty
+
+$ mkdir nameofdirectory
+$ cd nameofdirectory
+$ git init
+
+#Type the text to be contained within the file create the file
+#Add the file to the directory
+#Check that the file has been created
+
+$ echo "type message here" > filename.md
+$ git add filename.md
+$ git status
+
+#Commit your changes - file > exit to commit change after typing message
+
+$ git commit
+
+#If you prefer, instead of above which opens a text editor, insert message in the command line
+
+$ git commit -m "insert message"
+
+#If you did not export a text editor or insert message in the command line, exit editor by:
+# 	pressing 'i' to enter text and save by pressing 'Esc' and ':wq' and 'Enter' to commit with message
+# 	Press 'Esc' and ':q' to exit without commiting
+
+#Connect to remote repository if you haven't already
+
+$ git remote add origin https://github.com/yourUserNameHere/repository-name.git
+
+#May need to pull changes so remote and local repositories match (if just created new repository)
+
+$ git pull origin master
+
+#now you can push your file to the remote repository
+
+$ push origin master
+
+#now check your online repository to check that it has worked.
