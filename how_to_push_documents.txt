@@ -5,8 +5,8 @@
 
 $ export editor=notepad
 
-#Check the directory/folder in which are currently
-#list all sub directories/folders
+#Check which directory/folder you are currently in
+#list all sub-directories/folders
 #change directory if necessary
 
 $ pwd
@@ -19,7 +19,7 @@ $ mkdir nameofdirectory
 $ cd nameofdirectory
 $ git init
 
-#Type the text to be contained within the file create the file
+#Type the text to be contained within the file, create the file
 #Add the file to be commited
 #Check that the file has been created
 
@@ -39,16 +39,16 @@ $ git commit -m "insert message"
 # 	pressing 'i' to enter text and save by pressing 'Esc' and ':wq' and 'Enter' to commit with message
 # 	Press 'Esc' and ':q' to exit without commiting
 
-#Connect to remote repository if you haven't already
+#Connect to the remote repository if you haven't already
 
 $ git remote add origin https://github.com/yourUserNameHere/repository-name.git
 
-#May need to pull changes so remote and local repositories match (if just created new repository)
+#May need to pull changes first so remote and local repositories match (if you just created a new repository)
 
 $ git pull origin master
 
-#now you can push your file to the remote repository
+#Now you can push your file to the remote repository
 
 $ push origin master
 
-#now check your online repository to check that it has worked.
+#Now check your online repository to confirm it has been pushed.
